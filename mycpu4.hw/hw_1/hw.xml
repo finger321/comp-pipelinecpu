@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2018.3 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7a100t_0" gui_info="dashboard1=hw_ila_1[xc7a100t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7a100t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7a100t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7a100t_0/hw_ila_1/Status=ILA_STATUS_1;xc7a100t_0/hw_ila_1/Waveform=ILA_WAVE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a100t_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value=""/>
+      <Properties Property="PROBES.FILE" value=""/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="C:/Users/finger/Desktop/bitfile/cpu_top.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.DATA_DEPTH" value="1024"/>
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="500"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="pc[31:0]" gui_info="Trigger Setup=0"/>
+    <Object name="rst_n" gui_info=""/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;h0000_0000"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;h0000_0000"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="pc[31]"/>
+        <net name="pc[30]"/>
+        <net name="pc[29]"/>
+        <net name="pc[28]"/>
+        <net name="pc[27]"/>
+        <net name="pc[26]"/>
+        <net name="pc[25]"/>
+        <net name="pc[24]"/>
+        <net name="pc[23]"/>
+        <net name="pc[22]"/>
+        <net name="pc[21]"/>
+        <net name="pc[20]"/>
+        <net name="pc[19]"/>
+        <net name="pc[18]"/>
+        <net name="pc[17]"/>
+        <net name="pc[16]"/>
+        <net name="pc[15]"/>
+        <net name="pc[14]"/>
+        <net name="pc[13]"/>
+        <net name="pc[12]"/>
+        <net name="pc[11]"/>
+        <net name="pc[10]"/>
+        <net name="pc[9]"/>
+        <net name="pc[8]"/>
+        <net name="pc[7]"/>
+        <net name="pc[6]"/>
+        <net name="pc[5]"/>
+        <net name="pc[4]"/>
+        <net name="pc[3]"/>
+        <net name="pc[2]"/>
+        <net name="pc[1]"/>
+        <net name="pc[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="rst_n"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="trace_result[31]"/>
+        <net name="trace_result[30]"/>
+        <net name="trace_result[29]"/>
+        <net name="trace_result[28]"/>
+        <net name="trace_result[27]"/>
+        <net name="trace_result[26]"/>
+        <net name="trace_result[25]"/>
+        <net name="trace_result[24]"/>
+        <net name="trace_result[23]"/>
+        <net name="trace_result[22]"/>
+        <net name="trace_result[21]"/>
+        <net name="trace_result[20]"/>
+        <net name="trace_result[19]"/>
+        <net name="trace_result[18]"/>
+        <net name="trace_result[17]"/>
+        <net name="trace_result[16]"/>
+        <net name="trace_result[15]"/>
+        <net name="trace_result[14]"/>
+        <net name="trace_result[13]"/>
+        <net name="trace_result[12]"/>
+        <net name="trace_result[11]"/>
+        <net name="trace_result[10]"/>
+        <net name="trace_result[9]"/>
+        <net name="trace_result[8]"/>
+        <net name="trace_result[7]"/>
+        <net name="trace_result[6]"/>
+        <net name="trace_result[5]"/>
+        <net name="trace_result[4]"/>
+        <net name="trace_result[3]"/>
+        <net name="trace_result[2]"/>
+        <net name="trace_result[1]"/>
+        <net name="trace_result[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>
