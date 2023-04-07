@@ -1,0 +1,453 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 15 14:05:34 2022
+# Process ID: 18912
+# Current directory: C:/Users/finger/Desktop/mycpu4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13896 C:\Users\finger\Desktop\mycpu4\mycpu4.xpr
+# Log file: C:/Users/finger/Desktop/mycpu4/vivado.log
+# Journal file: C:/Users/finger/Desktop/mycpu4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/finger/Desktop/mycpu4/mycpu4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 698.559 ; gain = 100.457
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Jul 15 14:06:05 2022] Launched synth_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: cpu_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 776.160 ; gain = 58.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cpu_top' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/cpu_top.v:2]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/cpu_top.v:32]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/cpu_top.v:43]
+INFO: [Synth 8-6157] synthesizing module 'cpuclk' [C:/Users/finger/Desktop/mycpu4/.Xil/Vivado-18912-LAPTOP-NMF7S97L/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpuclk' (1#1) [C:/Users/finger/Desktop/mycpu4/.Xil/Vivado-18912-LAPTOP-NMF7S97L/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'prgrom' [C:/Users/finger/Desktop/mycpu4/.Xil/Vivado-18912-LAPTOP-NMF7S97L/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'prgrom' (2#1) [C:/Users/finger/Desktop/mycpu4/.Xil/Vivado-18912-LAPTOP-NMF7S97L/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/cpu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IF_IDReg' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/IF_IDReg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IF_IDReg' (4#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/IF_IDReg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HazardDectionUnit' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/HazardDectionUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HazardDectionUnit' (5#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/HazardDectionUnit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/NPC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (6#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/NPC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CTRL' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/CTRL.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CTRL' (7#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/CTRL.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/SEXT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (8#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/SEXT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/RF.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (9#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/RF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ID_EXReg' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/ID_EXReg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EXReg' (10#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/ID_EXReg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (11#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEMReg' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/EX_MEMReg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEMReg' (12#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/EX_MEMReg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ForwardUnit' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/ForwardUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardUnit' (13#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/ForwardUnit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (14#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/cpu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WBReg' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/MEM_WBReg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WBReg' (15#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/MEM_WBReg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dram' [C:/Users/finger/Desktop/mycpu4/.Xil/Vivado-18912-LAPTOP-NMF7S97L/realtime/dram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dram' (16#1) [C:/Users/finger/Desktop/mycpu4/.Xil/Vivado-18912-LAPTOP-NMF7S97L/realtime/dram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RES_DISPLAY' [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/RES_DISPLAY.v:1]
+	Parameter N bound to: 20000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/RES_DISPLAY.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'RES_DISPLAY' (17#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/RES_DISPLAY.v:1]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_cpu'. This will prevent further optimization [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/cpu_top.v:54]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'imem'. This will prevent further optimization [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/cpu_top.v:50]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_res_display'. This will prevent further optimization [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/cpu_top.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_top' (18#1) [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/cpu_top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 827.672 ; gain = 110.352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 827.672 ; gain = 110.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 827.672 ; gain = 110.352
+---------------------------------------------------------------------------------
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+43 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 852.648 ; gain = 135.328
+INFO: [Common 17-344] 'synth_design' was cancelled
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/finger/Desktop/2021/download_test/synthesized_ip/dram/dram.dcp' for cell 'dmem'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/finger/Desktop/2021/download_test/synthesized_ip/prgrom/prgrom.dcp' for cell 'imem'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.dcp' for cell 'u_cpuclk'
+INFO: [Netlist 29-17] Analyzing 3375 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk_board.xdc] for cell 'u_cpuclk/inst'
+Finished Parsing XDC File [c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk_board.xdc] for cell 'u_cpuclk/inst'
+Parsing XDC File [c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xdc] for cell 'u_cpuclk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xdc:57]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1717.312 ; gain = 583.473
+Finished Parsing XDC File [c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xdc] for cell 'u_cpuclk/inst'
+Parsing XDC File [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/constrs_1/new/clock.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk_i' already exists, overwriting the previous clock with the same name. [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/constrs_1/new/clock.xdc:1]
+Finished Parsing XDC File [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/constrs_1/new/clock.xdc]
+Parsing XDC File [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/constrs_1/new/pin.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1718.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2048 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+
+open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 1763.246 ; gain = 910.598
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list u_cpuclk/inst/clk_out1 ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {pc[0]} {pc[1]} {pc[2]} {pc[3]} {pc[4]} {pc[5]} {pc[6]} {pc[7]} {pc[8]} {pc[9]} {pc[10]} {pc[11]} {pc[12]} {pc[13]} {pc[14]} {pc[15]} {pc[16]} {pc[17]} {pc[18]} {pc[19]} {pc[20]} {pc[21]} {pc[22]} {pc[23]} {pc[24]} {pc[25]} {pc[26]} {pc[27]} {pc[28]} {pc[29]} {pc[30]} {pc[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {trace_result[0]} {trace_result[1]} {trace_result[2]} {trace_result[3]} {trace_result[4]} {trace_result[5]} {trace_result[6]} {trace_result[7]} {trace_result[8]} {trace_result[9]} {trace_result[10]} {trace_result[11]} {trace_result[12]} {trace_result[13]} {trace_result[14]} {trace_result[15]} {trace_result[16]} {trace_result[17]} {trace_result[18]} {trace_result[19]} {trace_result[20]} {trace_result[21]} {trace_result[22]} {trace_result[23]} {trace_result[24]} {trace_result[25]} {trace_result[26]} {trace_result[27]} {trace_result[28]} {trace_result[29]} {trace_result[30]} {trace_result[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list rst_n ]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1845.477 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1845.477 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1848.391 ; gain = 2.914
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1851.383 ; gain = 0.000
+[Fri Jul 15 14:09:53 2022] Launched impl_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0001
+set_property PROGRAM.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3222] Mismatch between the design programmed into the device xc7a100t (JTAG device index = 0) and the probes file(s) C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.ltx.
+ The hw_probe  in the probes file has port index 2. This port does not exist in the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE).
+set_property PROBES.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2799.734 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-15 14:24:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jul-15 14:24:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/finger/Desktop/mycpu4/mycpu4.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {trace_result} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-Jul-15 14:24:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-Jul-15 14:24:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/finger/Desktop/mycpu4/mycpu4.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 15 14:45:08 2022] Launched synth_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/synth_1/runme.log
+[Fri Jul 15 14:45:08 2022] Launched impl_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2872.270 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 15 14:53:39 2022] Launched synth_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/synth_1/runme.log
+[Fri Jul 15 14:53:39 2022] Launched impl_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2874.039 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {90} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10} CONFIG.CLKOUT1_JITTER {140.709} CONFIG.CLKOUT1_PHASE_ERROR {105.461}] [get_ips cpuclk]
+generate_target all [get_files  C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'cpuclk'...
+catch { config_ip_cache -export [get_ips -all cpuclk] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cpuclk, cache-ID = 487c01e1b03df391; cache size = 19.922 MB.
+catch { [ delete_ip_run [get_ips -all cpuclk] ] }
+INFO: [Project 1-386] Moving file 'C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci' from fileset 'cpuclk' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci'
+export_simulation -of_objects [get_files C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci] -directory C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files -ipstatic_source_dir C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/modelsim} {questa=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/questa} {riviera=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/riviera} {activehdl=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2916.383 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 15 15:03:37 2022] Launched synth_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/synth_1/runme.log
+[Fri Jul 15 15:03:37 2022] Launched impl_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+close [ open C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/BUS.v w ]
+add_files C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/BUS.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2926.855 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~""}]]
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {17} CONFIG.MMCM_CLKOUT0_DIVIDE_F {17} CONFIG.CLKOUT1_JITTER {203.457} CONFIG.CLKOUT1_PHASE_ERROR {155.540}] [get_ips cpuclk]
+generate_target all [get_files  C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'cpuclk'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'cpuclk'...
+catch { config_ip_cache -export [get_ips -all cpuclk] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP cpuclk, cache-ID = d0c977cecfd793d3; cache size = 19.923 MB.
+export_ip_user_files -of_objects [get_files C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci'
+export_simulation -of_objects [get_files C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci] -directory C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files -ipstatic_source_dir C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/modelsim} {questa=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/questa} {riviera=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/riviera} {activehdl=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/finger/Desktop/2021/download_test/synthesized_ip/prgrom/prgrom.dcp] -no_script -reset -force -quiet
+remove_files  C:/Users/finger/Desktop/2021/download_test/synthesized_ip/prgrom/prgrom.dcp
+remove_files  C:/Users/finger/Desktop/2021/download_test/synthesized_ip/prgrom/prgrom.dcp
+WARNING: [Vivado 12-818] No files matched 'C:/Users/finger/Desktop/2021/download_test/synthesized_ip/prgrom/prgrom.dcp'
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name prgrom -dir c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {16384} CONFIG.data_width {32} CONFIG.Component_Name {prgrom} CONFIG.memory_type {rom}] [get_ips prgrom]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'prgrom' to 'prgrom' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
+generate_target all [get_files  c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
+catch { config_ip_cache -export [get_ips -all prgrom] }
+export_ip_user_files -of_objects [get_files c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/prgrom/prgrom.xci]
+launch_runs -jobs 8 prgrom_synth_1
+[Fri Jul 15 15:20:15 2022] Launched prgrom_synth_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/prgrom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/prgrom/prgrom.xci] -directory C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files -ipstatic_source_dir C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/modelsim} {questa=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/questa} {riviera=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/riviera} {activehdl=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.coefficient_file {c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/prgrom/inst_ram.coe}] [get_ips prgrom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/prgrom/inst_ram.coe' provided. It will be converted relative to IP Instance files 'inst_ram.coe'
+generate_target all [get_files  c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
+catch { config_ip_cache -export [get_ips -all prgrom] }
+export_ip_user_files -of_objects [get_files c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -sync -force -quiet
+reset_run prgrom_synth_1
+launch_runs -jobs 8 prgrom_synth_1
+[Fri Jul 15 15:24:17 2022] Launched prgrom_synth_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/prgrom_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/prgrom/prgrom.xci] -directory C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files -ipstatic_source_dir C:/Users/finger/Desktop/mycpu4/mycpu4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/modelsim} {questa=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/questa} {riviera=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/riviera} {activehdl=C:/Users/finger/Desktop/mycpu4/mycpu4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/finger/Desktop/bitfile/cpu_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3005.102 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/finger/Desktop/mycpu4/mycpu4.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 15 15:25:01 2022] Launched prgrom_synth_1, synth_1...
+Run output will be captured here:
+prgrom_synth_1: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/prgrom_synth_1/runme.log
+synth_1: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/synth_1/runme.log
+[Fri Jul 15 15:25:01 2022] Launched impl_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 15 15:39:08 2022] Launched impl_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/finger/Desktop/mycpu4/mycpu4.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci' is already up-to-date
+[Fri Jul 15 15:39:34 2022] Launched synth_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 15 15:40:43 2022] Launched impl_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/runme.log
+reorder_files -fileset constrs_1 -before C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/constrs_1/new/pin.xdc C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/constrs_1/new/pin.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/ip/cpuclk/cpuclk.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jul 15 15:49:56 2022] Launched synth_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/synth_1/runme.log
+[Fri Jul 15 15:49:56 2022] Launched impl_1...
+Run output will be captured here: C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/finger/Desktop/bitfile/cpu_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3023.246 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/finger/Desktop/mycpu4/mycpu4.runs/impl_1/cpu_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3023.246 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/finger/Desktop/bitfile/cpu_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3023.246 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/Port_#0002.Hub_#0001
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 15 16:38:33 2022...

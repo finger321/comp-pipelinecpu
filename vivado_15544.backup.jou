@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul 11 20:59:59 2022
+# Process ID: 15544
+# Current directory: C:/Users/finger/Desktop/mycpu4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18940 C:\Users\finger\Desktop\mycpu4\mycpu4.xpr
+# Log file: C:/Users/finger/Desktop/mycpu4/vivado.log
+# Journal file: C:/Users/finger/Desktop/mycpu4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/finger/Desktop/mycpu4/mycpu4.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/EX_MEMReg.v w ]
+add_files C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/EX_MEMReg.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/MEM_WBReg.v w ]
+add_files C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/MEM_WBReg.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/HazardDectionUnit.v w ]
+add_files C:/Users/finger/Desktop/mycpu4/mycpu4.srcs/sources_1/new/HazardDectionUnit.v
+update_compile_order -fileset sources_1
